@@ -8,7 +8,7 @@ RUN yum install -y httpd \
     && yum install -y openssl098e compat-readline5 compat-openldap \
     && yum install -y libxslt \
     && yum install -y mysql-devel \
-    && yum install -y php \
+    && yum install -y php php-cli php-devel php-gd php-xml php-intl php-mysql php-pdo \
     && yum remove -y gcc autoconf automake \
     && yum clean all \
     && find /var/log -type f -print0 | xargs -0 rm -rf /tmp/*
