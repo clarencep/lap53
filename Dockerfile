@@ -11,7 +11,7 @@ RUN yum install -y httpd \
     && yum install -y php \
     && yum remove -y gcc make autoconf automake \
     && yum clean all \
-    && find /var/log -type f -print0 | xargs -0 rm -rf /tmp/* \
+    && find /var/log -type f -print0 | xargs -0 rm -rf /tmp/*
     
 CMD [ "/usr/sbin/httpd", "-DFOREGROUND" ]
 
