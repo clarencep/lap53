@@ -3,13 +3,13 @@
 ## Install
 
 ```
-docker pull clarencep/lap52
+docker pull clarencep/lap53
 ```
 
 ## Run 
 
 ```
-docker run -d -v /path/to/your/web/root:/var/www/html -p 8080:80 --name lap52 clarencep/lap52
+docker run -d -v /path/to/your/web/root:/var/www/html -p 8080:80 --name lap53 clarencep/lap53
 ```
 
 ## Exposed Port: 80
